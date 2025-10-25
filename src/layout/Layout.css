@@ -1,0 +1,19 @@
+.index-layout {
+  width: 100%;
+  max-width: 1536px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  padding-left: 300px;
+}
+.layout-content {
+  padding-top: 25px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .index-layout {
+    padding-left: 25px;
+  }
+}
