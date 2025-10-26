@@ -1,10 +1,17 @@
 :root {
-  --body-bg: #F1F5F9;
+  --body-bg: #f1f5f9;
   --primary-color: #192336;
   --primary-color-shadow: rgba(25, 35, 54, 0.3);
-  --item-color: #FFDF99;
-  --text-color: #1E293B;
+  --item-color: #ffdf99;
+  --text-color: #1e293b;
   --highlist-color: #fff;
+
+  /* decorative-colors */
+
+  --decorative-color-1: #2C6CEE;
+  --decorative-color-2: #1FB958;
+  --decorative-color-3: #EB5C0D;
+  --decorative-color-4: #a550f5;
 }
 
 html {
@@ -156,7 +163,12 @@ template {
 
 /* STYLES */
 
-h2 , h1 , h3 , h4 , h5 , h6 {
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -187,6 +199,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
