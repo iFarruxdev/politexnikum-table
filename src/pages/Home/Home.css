@@ -44,6 +44,7 @@
 .home-item-content-heading {
   font-size: 17px;
   margin-bottom: 10px;
+  font-weight: 600;
   color: var(--text-color);
   white-space: nowrap;
 }

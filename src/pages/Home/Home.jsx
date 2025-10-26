@@ -8,11 +8,11 @@ const Home = () => {
   return <section className="home-section">
     {/* <h1>Home Section</h1> */}
     <ul className="index-home-list">
-      <li className="index-home-item-wrapper">
+      <div className="index-home-item-wrapper">
       <li className="home-item home-item-1">
         <span className="home-item-content">
           <h3 className="home-item-content-heading">Jami O'qituvchilar</h3>
-          <h4 className="home-item-content-value">68</h4>
+          <h4 className="home-item-content-value font-bold">68</h4>
         </span>
         <span className="home-item-image home-item-image-1">
           <SchoolIcon sx={{fontSize:'28px'}} />
@@ -21,7 +21,7 @@ const Home = () => {
       <li className="home-item home-item-2">
         <span className="home-item-content">
           <h3 className="home-item-content-heading">Jami Guruhlar</h3>
-          <h4 className="home-item-content-value">38</h4>
+          <h4 className="home-item-content-value font-bold">38</h4>
         </span>
         <span className="home-item-image home-item-image-2">
           <GroupIcon sx={{fontSize:'28px'}} />
@@ -30,7 +30,7 @@ const Home = () => {
       <li className="home-item home-item-3">
         <span className="home-item-content">
           <h3 className="home-item-content-heading">Jami Fanlar</h3>
-          <h4 className="home-item-content-value">20</h4>
+          <h4 className="home-item-content-value font-bold">20</h4>
         </span>
         <span className="home-item-image home-item-image-3">
           <MenuBookIcon sx={{fontSize:'28px'}} />
@@ -39,13 +39,13 @@ const Home = () => {
       <li className="home-item home-item-4">
         <span className="home-item-content">
           <h3 className="home-item-content-heading">Jami Jadvallar</h3>
-          <h4 className="home-item-content-value">18</h4>
+          <h4 className="home-item-content-value font-bold">18</h4>
         </span>
         <span className="home-item-image home-item-image-4">
           <TableViewIcon sx={{fontSize:'28px'}} />
         </span>
       </li>
-      </li>
+      </div>
     </ul>
   </section>;
 };
