@@ -6,6 +6,7 @@ import TableViewIcon from '@mui/icons-material/TableView';
 
 const Home = () => {
   return <section className="home-section">
+    {/* <h1>Home Section</h1> */}
     <ul className="index-home-list">
       <li className="index-home-item-wrapper">
       <li className="home-item home-item-1">

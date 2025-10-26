@@ -2,7 +2,10 @@ import './Schedule.css'
 
 const Schedule = () => {
   return (
-    <div>Schedule</div>
+    <section className='schedule-section'>
+      {/* <h1>Schedule Section</h1> */}
+      
+    </section>
   )
 }
 
