@@ -8,12 +8,14 @@ import Subjects from './pages/Subjects/Subjects'
 import Groups from './pages/Groups/Groups'
 import Courses from './pages/Courses/Courses'
 import CoursesTwo from './pages/Courses-1/CoursesTwo'
+import { useState } from "react";
 
 function App() {
+  let [toggleBar, setToggleBar] = useState(false);
   const routes = createBrowserRouter([
     {
       path:'',
-      element: <Layout />,
+      element: <Layout toggleBar={toggleBar} setToggleBar={setToggleBar} />,
       children: [
         {
           index: true,

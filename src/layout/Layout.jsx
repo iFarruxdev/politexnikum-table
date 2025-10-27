@@ -2,10 +2,8 @@ import "./Layout.css";
 import Dashboard from "../components/Dashboard/Dashboard";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
-import { useState } from "react";
 
-const Layout = () => {
-  let [toggleBar, setToggleBar] = useState(false);
+const Layout = ({toggleBar , setToggleBar}) => {
   return (
     <div className="index-layout">
       <Dashboard toggleBar={toggleBar} setToggleBar={setToggleBar} />

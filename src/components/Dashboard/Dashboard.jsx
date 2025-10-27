@@ -18,31 +18,31 @@ const Dashboard = ({toggleBar , setToggleBar}) => {
         <ul className='dashboard-list'>
           <CloseIcon onClick={() => setToggleBar(!toggleBar)} className='dashboard-close-icon' sx={{position:'absolute',top:'-135px',right:'-10px',fontSize:'25px'}} />
           <li className="dashboard-item">
-            <NavLink className='dashboard-link' to=''>
+            <NavLink onClick={() => setToggleBar(!toggleBar)} className='dashboard-link' to=''>
               <HomeIcon sx={{fontSize:'24px',marginBottom:'2.5px'}} className='dashboard-link-icon' />
               <span>bosh sahifa</span>
             </NavLink>
           </li>
           <li className="dashboard-item">
-            <NavLink className='dashboard-link' to='schedule'>
+            <NavLink onClick={() => setToggleBar(!toggleBar)} className='dashboard-link' to='schedule'>
              <TableViewIcon sx={{fontSize:'24px',marginBottom:'2.5px'}} className='dashboard-link-icon' />
               <span>dars jadvali</span>
             </NavLink>
           </li>
           <li className="dashboard-item">
-            <NavLink className='dashboard-link' to='teachers'>
+            <NavLink onClick={() => setToggleBar(!toggleBar)} className='dashboard-link' to='teachers'>
               <SchoolIcon sx={{fontSize:'24px',marginBottom:'2.5px'}} className='dashboard-link-icon' />
               <span>o‘qituvchilar</span>
             </NavLink>
           </li>
           <li className="dashboard-item">
-            <NavLink className='dashboard-link' to='groups'>
+            <NavLink onClick={() => setToggleBar(!toggleBar)} className='dashboard-link' to='groups'>
               <GroupsIcon sx={{fontSize:'24px',marginBottom:'2.5px'}} className='dashboard-link-icon' />
               <span>guruhlar</span>
             </NavLink>
           </li>
           <li className="dashboard-item">
-            <NavLink className='dashboard-link' to='subject'>
+            <NavLink onClick={() => setToggleBar(!toggleBar)} className='dashboard-link' to='subject'>
               <MenuBookIcon sx={{fontSize:'24px',marginBottom:'2.5px'}} className='dashboard-link-icon' />
               <span>fanlar</span>
             </NavLink>

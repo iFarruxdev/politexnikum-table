@@ -8,7 +8,7 @@ const Schedule = () => {
     setOpenEvent((prev) =>
       prev.includes(index)
         ? prev.filter((i) => i !== index)
-        : [...prev, index]
+        : [index]
     );
   };
   const groups = [
@@ -202,7 +202,7 @@ const Schedule = () => {
     <section className='schedule-section'>
       {/* <h1>Schedule Section</h1> */}
     <div className="bg-gradient-to-br">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-8 space-y-12">
+      <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-4 py-8 space-y-12">
         {groups.map((group, groupIndex) => {
           const isOpen = openEvent.includes(groupIndex);
           return (
