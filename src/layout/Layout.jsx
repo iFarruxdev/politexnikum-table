@@ -11,7 +11,9 @@ const Layout = () => {
       <Dashboard toggleBar={toggleBar} setToggleBar={setToggleBar} />
       <div className="layout-content">
         <Header setToggleBar={setToggleBar} toggleBar={toggleBar} />
-        <Outlet />
+        <main className="main-section">
+          <Outlet />
+        </main>
       </div>
     </div>
   );

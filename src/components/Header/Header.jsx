@@ -9,7 +9,7 @@ const Header = ({setToggleBar , toggleBar}) => {
         <Link className='header-logo' to=''>politexnikum</Link>
         <MenuIcon onClick={() => setToggleBar(!toggleBar)} className='header-menu-icon' />
         <div className="header-info-wrapper">
-          <img className='header-profile-image' src="https://img.freepik.com/premium-vector/anonymous-user-flat-icon-vector-illustration-with-long-shadow_520826-1932.jpg" alt="administrator-profile image" width={42} height={42} />
+          <img loading='lazy' className='header-profile-image' src="https://img.freepik.com/premium-vector/anonymous-user-flat-icon-vector-illustration-with-long-shadow_520826-1932.jpg" alt="administrator-profile image" width={42} height={42} />
         </div>
       </div>
     </header>

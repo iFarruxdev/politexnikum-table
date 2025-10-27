@@ -19,3 +19,13 @@
 .objects-hide {
   display: none;
 }
+#group-list {
+  padding-right: 80px;
+  background-color: var(--text-color);
+}
+
+@media (max-width:1000px) {
+  #group-list {
+    padding-right: 100px;
+  }
+}

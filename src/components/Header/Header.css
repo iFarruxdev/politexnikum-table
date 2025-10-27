@@ -17,7 +17,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--text-color);
-  flex-grow: 1;
+  margin-right: auto;
 }
 .header-menu-icon {
   display: none !important;

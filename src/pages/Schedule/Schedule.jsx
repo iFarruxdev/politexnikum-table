@@ -3,7 +3,14 @@ import './Schedule.css'
 import { Calendar, Clock, Users, CircleArrowRight, CircleArrowDown } from 'lucide-react';
 
 const Schedule = () => {
-  let [openEvent , setOpenEvent] = useState(true);
+  let [openEvent , setOpenEvent] = useState([]);
+  const toggleEvent = (index) => {
+    setOpenEvent((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
+    );
+  };
   const groups = [
     {
       groupNumber: '10-25',
@@ -201,13 +208,14 @@ const Schedule = () => {
       {/* <h1>Schedule Section</h1> */}
     <div className="bg-gradient-to-br">
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-8 space-y-12">
-        {groups.map((group, groupIndex) => (
-          <div key={groupIndex} className="space-y-6">
-            <div className="bg-gradient-to-r relative group-item-wrapper from-blue-600 to-blue-700 rounded-xl shadow-lg p-6 text-white">
-              {openEvent ? <CircleArrowRight className='group-item-icon' onClick={() => setOpenEvent(false)} /> :
-              <CircleArrowDown className='group-item-icon' onClick={() => setOpenEvent(true)}
-              />}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-8 space-y-12">
+        {groups.map((group, groupIndex) => {
+          const isOpen = openEvent.includes(groupIndex);
+          return (
+            <div key={groupIndex} className="space-y-6">
+            <div id='group-list' onClick={() => toggleEvent(groupIndex)} className="bg-gradient-to-r relative group-item-wrapper rounded-xl cursor-pointer shadow-lg p-6 text-white">
+              {isOpen ? <CircleArrowRight className='group-item-icon' /> :
+              <CircleArrowDown className='group-item-icon' />}
               <div className="flex items-center gap-3 mb-2">
                 <Users className="w-6 h-6" />
                 <h2 className="text-2xl font-bold">{group.groupNumber} - {group.groupName}</h2>
@@ -215,10 +223,10 @@ const Schedule = () => {
               <p className="text-blue-100 text-sm">Haftalik dars jadvali</p>
             </div>
 
-            <div className={`grid grid-cols-1 lg:grid-cols-5 gap-6 ${openEvent && "objects-hide"}`}>
+            <div className={`grid grid-cols-1 lg:grid-cols-5 gap-6 ${!isOpen && "objects-hide"}`}>
               {Object.keys(group.schedule).map((day) => (
                 <div key={day} className="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 hover:shadow-lg transition-shadow duration-300">
-                  <div className="bg-gradient-to-r from-slate-700 to-slate-800 px-4 py-3">
+                  <div className="bg-gradient-to-r bg-[var(--text-color)] px-4 py-3">
                     <h3 className="text-lg font-semibold text-white text-center">{day}</h3>
                   </div>
 
@@ -250,9 +258,10 @@ const Schedule = () => {
               ))}
             </div>
           </div>
-        ))}
+          )
+          })}
 
-      </main>
+      </div>
     </div>
     </section>
   )
