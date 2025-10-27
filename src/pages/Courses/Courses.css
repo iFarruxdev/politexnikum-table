@@ -1,0 +1,18 @@
+.site-courses {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.schedule-links.active {
+  background-color: #2C6CEE;
+}
+
+.schedule-links.active h4 {
+  color: #fff;
+}
+
+@media (max-width: 537.99px) {
+  #item-link-schedule {
+    margin-left: auto;
+  }
+}

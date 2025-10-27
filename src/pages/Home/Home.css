@@ -51,6 +51,7 @@
 .home-item-content-value {
   font-size: 27px;
   color: var(--text-color);
+  white-space: nowrap;
 }
 .home-item-image {
   width: 57px;

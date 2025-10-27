@@ -203,9 +203,6 @@ const Schedule = () => {
       {/* <h1>Schedule Section</h1> */}
     <div className="bg-gradient-to-br">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-8 space-y-12">
-      <h2 className='text-center bg-[var(--text-color)] rounded-xl py-[18px] text-[20px] uppercase font-bold text-white !mb-[40px]'>
-        1 - kurs
-      </h2>
         {groups.map((group, groupIndex) => {
           const isOpen = openEvent.includes(groupIndex);
           return (

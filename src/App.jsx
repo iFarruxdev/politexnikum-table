@@ -6,6 +6,8 @@ import Schedule from './pages/Schedule/Schedule'
 import Teachers from './pages/Teachers/Teachers'
 import Subjects from './pages/Subjects/Subjects'
 import Groups from './pages/Groups/Groups'
+import Courses from './pages/Courses/Courses'
+import CoursesTwo from './pages/Courses-1/CoursesTwo'
 
 function App() {
   const routes = createBrowserRouter([
@@ -19,7 +21,17 @@ function App() {
         },
         {
           path: "schedule",
-          element: <Schedule />
+          element: <Courses />,
+          children: [
+            {
+              path:'courses-1' ,
+              element: <Schedule />
+            },
+            {
+              path:'courses-2',
+              element: <CoursesTwo />
+            }
+          ]
         },
         {
           path: "teachers",

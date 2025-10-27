@@ -1,8 +1,8 @@
 import "./Home.css";
 import SchoolIcon from '@mui/icons-material/School';
 import GroupIcon from '@mui/icons-material/Group';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
-import TableViewIcon from '@mui/icons-material/TableView';
+import PlaceIcon from '@mui/icons-material/Place';
+import StarIcon from '@mui/icons-material/Star';
 
 const Home = () => {
   return <section className="home-section">
@@ -20,7 +20,7 @@ const Home = () => {
       </li>
       <li className="home-item home-item-2">
         <span className="home-item-content">
-          <h3 className="home-item-content-heading">Jami Guruhlar</h3>
+          <h3 className="home-item-content-heading">Jami Talabar</h3>
           <h4 className="home-item-content-value font-bold">38</h4>
         </span>
         <span className="home-item-image home-item-image-2">
@@ -29,20 +29,20 @@ const Home = () => {
       </li>
       <li className="home-item home-item-3">
         <span className="home-item-content">
-          <h3 className="home-item-content-heading">Jami Fanlar</h3>
+          <h3 className="home-item-content-heading">Jami Yo'nalishlar</h3>
           <h4 className="home-item-content-value font-bold">20</h4>
         </span>
         <span className="home-item-image home-item-image-3">
-          <MenuBookIcon sx={{fontSize:'28px'}} />
+          <PlaceIcon sx={{fontSize:'28px'}} />
         </span>
       </li>
       <li className="home-item home-item-4">
         <span className="home-item-content">
-          <h3 className="home-item-content-heading">Jami Jadvallar</h3>
+          <h3 className="home-item-content-heading">Jami Masterlar</h3>
           <h4 className="home-item-content-value font-bold">18</h4>
         </span>
         <span className="home-item-image home-item-image-4">
-          <TableViewIcon sx={{fontSize:'28px'}} />
+          <StarIcon sx={{fontSize:'28px'}} />
         </span>
       </li>
       </div>
