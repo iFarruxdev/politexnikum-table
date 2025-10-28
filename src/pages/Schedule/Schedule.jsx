@@ -17,7 +17,7 @@ const Schedule = () => {
       groupName: 'Tikuvchi (Dual)',
       schedule: {
         Dushanba: [
-          { subject: 'Ingliz tili', time: '08:30 - 09:50', teacher: "Yo'lchiboyeva. M", room: '1,6' },
+          { subject: 'Ingliz tili', time: '08:30 - 09:50', teacher: "Yo'lchiboyeva. M / Xudoyorov B", room: '1,6 - 3,32' },
           { subject: 'Ona tili', time: '10:00 - 11:20', teacher: 'Rahimova M', room: '3,5' },
           { subject: 'Matematika', time: '12:00 - 13:20', teacher: 'Hudoyberdiyeva Sh', room: '4,12' },
           { subject: 'Ingliz tili', time: '13:30 - 14:50', teacher: 'Xudoyorov B - Yulchiboyeva M ', room: '1,6 - 3,32' }
@@ -25,8 +25,7 @@ const Schedule = () => {
         Seshanba: [
           { subject: 'Rus tili', time: '08:30 - 09:50', teacher: 'Urunova M / Meliboyeva A ', room: '2,39 - 2,21' },
           { subject: 'Matematika', time: '10:00 - 11:20', teacher: 'Hudoyberdiyeva Sh', room: '4,12' },
-          { subject: 'CHQBT / Maxsus rasm ', time: '12:00 - 13:20', teacher: 'Ms. Martinez', room: '4,13 - 1,5' },
-          { subject: 'Physical Education', time: '13:30 - 14:50', teacher: 'Coach Taylor', room: 'Gym' }
+          { subject: 'CHQBT / Maxsus rasm', time: '12:00 - 13:20', teacher: 'Ms. Martinez', room: '4,13 - 1,5' },
         ],
         Chorshanba: [
           { subject: 'Fizika', time: '08:30 - 09:50', teacher: 'Meliboyeva Sh', room: '3,15' },
@@ -44,156 +43,279 @@ const Schedule = () => {
           { subject: 'Kvalifikatsion amaliyot', time: '08:30 - 09:50', teacher: 'I/ch korxona', room: '00' },
           { subject: 'Kvalifikatsion amaliyot', time: '10:00 - 11:20', teacher: 'I/ch korxona', room: '00' },
           { subject: 'Kvalifikatsion amaliyot', time: '12:00 - 13:20', teacher: 'I/ch korxona', room: '00' },
-          { subject: 'English Literature', time: '13:30 - 14:50', teacher: 'Ms. Williams', room: '105' }
+        ],
+        Shanba: [
+          { subject: 'Kvalifikatsion amaliyot', time: '08:30 - 09:50', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '10:00 - 11:20', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '12:00 - 13:20', teacher: 'I/ch korxona', room: '00' },
         ]
       }
     },
     {
-      groupNumber: '11-18',
-      groupName: 'Web Development and Programming',
+      groupNumber: '2-25',
+      groupName: 'Tikuvchi',
       schedule: {
         Dushanba: [
-          { subject: 'Programming', time: '08:30 - 09:50', teacher: 'Mr. Davis', room: '402' },
-          { subject: 'Web Design', time: '10:00 - 11:20', teacher: 'Ms. Anderson', room: '201' },
-          { subject: 'Database', time: '12:00 - 13:20', teacher: 'Dr. Chen', room: '305' },
-          { subject: 'Mathematics', time: '13:30 - 14:50', teacher: 'Dr. Smith', room: '101' },
-          { subject: 'English', time: '13:00 - 13:45', teacher: 'Ms. Williams', room: '105' }
+          { subject: 'Matematika', time: '08:30 - 09:50', teacher: 'Hudoyberdiyeva Sh', room: '4,12' },
+          { subject: 'Ingliz tili', time: '10:00 - 11:20', teacher: "Yo'lchiboyeva M / Xudoyorov B", room: "1,6 - 3,32" },
+          { subject: "Rus tili / Maxsus rasm", time: "12:00 - 13:20", teacher: "Isaqova N -Djurayeva S / Qurbonava N ", room: "2,41 - 1,18" },
         ],
         Seshanba: [
-          { subject: 'JavaScript Advanced', time: '08:30 - 09:50', teacher: 'Mr. Davis', room: '402' },
-          { subject: 'UI/UX Design', time: '10:00 - 11:20', teacher: 'Ms. Anderson', room: '201' },
-          { subject: 'Server Administration', time: '12:00 - 13:20', teacher: 'Mr. Torres', room: '403' },
-          { subject: 'Project Management', time: '13:30 - 14:50', teacher: 'Ms. Roberts', room: '210' },
-          { subject: 'Mobile Development', time: '13:00 - 13:45', teacher: 'Dr. Kim', room: '404' }
+          { subject: "Bolalar kiyimini tikish O'A", time: "08:30 - 09:50", teacher: "Turg'unova M ", room: "2,7" },
+          { subject: "Bolalar kiyimini tikish O'A", time: "10:00 - 11:20", teacher: "Turg'unova M", room: "2,7" },
+          { subject: "Bolalar kiyimini tikish O'A", time: "12:00 - 13:20", teacher: "Turg'unova M", room: "2,7" },
         ],
         Chorshanba: [
-          { subject: 'React Framework', time: '08:30 - 09:50', teacher: 'Mr. Davis', room: '402' },
-          { subject: 'CSS Advanced', time: '10:00 - 11:20', teacher: 'Ms. Anderson', room: '201' },
-          { subject: 'API Development', time: '12:00 - 13:20', teacher: 'Dr. Chen', room: '305' },
-          { subject: 'Version Control', time: '13:30 - 14:50', teacher: 'Mr. Torres', room: '403' },
-          { subject: 'Testing & QA', time: '13:00 - 13:45', teacher: 'Ms. Parker', room: '307' }
+          { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Ona tili", time: "10:00 - 11:20", teacher: "Qobilova O", room: "3,11" },
+          { subject: "Mehnat muhofazasi", time: "12:00 - 13:20", teacher: "Hamdamova M", room: "1,5" },
+          { subject: "Ingliz tili", time: "13:30 - 14:50", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
         ],
         Payshanba: [
-          { subject: 'Node.js Backend', time: '08:30 - 09:50', teacher: 'Dr. Chen', room: '305' },
-          { subject: 'Graphic Design', time: '10:00 - 11:20', teacher: 'Ms. Anderson', room: '201' },
-          { subject: 'Cloud Computing', time: '12:00 - 13:20', teacher: 'Mr. Torres', room: '403' },
-          { subject: 'Cybersecurity Basics', time: '13:30 - 14:50', teacher: 'Dr. Hayes', room: '308' },
-          { subject: 'Portfolio Development', time: '13:00 - 13:45', teacher: 'Ms. Roberts', room: '210' }
+          { subject: "Informatika /Kiyim mayda detallar i/b O'A", time: "08:30 - 09:50", teacher: "Roziqov J / Musayev I / Turg'unova M ", room: "2,6 - 4,15 - 2,7" },
+          { subject: "Fizika / Kiyim mayda detal i/b O'/A", time: "10:00 - 11:20", teacher: "Saidaliyeva I / Turg'unova M ", room: "4,15 - 2,7" },
+          { subject: "Tarbiya / Kiyim mayda deta i/b O'A", time: "12:00 - 13:20", teacher: "Murodov A / Turg'unova M ", room: "3,4 - 2,7" },
         ],
         Juma: [
-          { subject: 'Full Stack Project', time: '08:30 - 09:50', teacher: 'Mr. Davis', room: '402' },
-          { subject: 'DevOps Fundamentals', time: '10:00 - 11:20', teacher: 'Mr. Torres', room: '403' },
-          { subject: 'Agile Methodology', time: '12:00 - 13:20', teacher: 'Ms. Roberts', room: '210' },
-          { subject: 'Career Development', time: '13:30 - 14:50', teacher: 'Ms. Foster', room: '110' },
-          { subject: 'Code Review Session', time: '13:00 - 13:45', teacher: 'Mr. Davis', room: '402' }
+          { subject: "Tikuvchilik materallari", time: "08:30 - 09:50", teacher: "Qurbonova N", room: "1,18" },
+          { subject: "CHQBT / Jismoniy tarbiya", time: "10:00 - 11:20", teacher: "Aminjonov M / Jo'rayev N", room: "4,15 - zal" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Ma'naviyat soati", time: "13:30 - 14:50", teacher: "Hamdamova M", room: "1,5" },
+        ],
+        Shanba: [
+          { subject: "Bolalar kiyimini konstuksiyalash", time: "08:30 - 09:50", teacher: "Hamdamova M", room: "1,5" },
+          { subject: "Bolalar kiyimini tikish", time: "10:00 - 11:20", teacher: "Hamdamova M", room: "1,5" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Tarix", time: "13:30 - 14:50", teacher: "O'rinova G", room: "4,11" }
         ]
       }
     },
     {
-      groupNumber: '09-32',
-      groupName: 'Digital Marketing Specialist',
+      groupNumber: "3-25",
+      groupName: "Tikuvchi",
       schedule: {
         Dushanba: [
-          { subject: 'Marketing', time: '08:30 - 09:50', teacher: 'Ms. Roberts', room: '210' },
-          { subject: 'Social Media Strategy', time: '10:00 - 11:20', teacher: 'Ms. Foster', room: '110' },
-          { subject: 'Content Creation', time: '12:00 - 13:20', teacher: 'Ms. Anderson', room: '201' },
-          { subject: 'SEO & Analytics', time: '13:30 - 14:50', teacher: 'Mr. Peterson', room: '209' },
-          { subject: 'Email Marketing', time: '13:00 - 13:45', teacher: 'Ms. Brown', room: '208' }
+          { subject: "Jismoniy tarbiya / Kiyim mayda detallar i/b O'A", time: "08:30 - 09:50", teacher: "Jo'rayev N /Akbarova G ", room: "zal - 2,7" },
+          { subject: "CHQBT / Kiyim mayda detal i/b O'/A", time: "10:00 - 11:20", teacher: "Aminjonov M / Akbarova G ", room: "4,5 - 2,7" },
+          { subject: "Informatika  / Kiyim mayda deta i/b O'A", time: "12:00 - 13:20", teacher: "Roziqov J / Musayev I / Akbarova G  ", room: "2,6 - 3,10 - 2,7" },
+          { subject: "Bolalar kiyimini tikish", time: "13:30 - 14:50", teacher: "Hamdamova M ", room: "1,5" },
         ],
         Seshanba: [
-          { subject: 'Brand Management', time: '08:30 - 09:50', teacher: 'Ms. Roberts', room: '210' },
-          { subject: 'Video Production', time: '10:00 - 11:20', teacher: 'Mr. Lee', room: '205' },
-          { subject: 'Copywriting', time: '12:00 - 13:20', teacher: 'Ms. Williams', room: '105' },
-          { subject: 'Paid Advertising', time: '13:30 - 14:50', teacher: 'Mr. Peterson', room: '209' },
-          { subject: 'Influencer Marketing', time: '13:00 - 13:45', teacher: 'Ms. Foster', room: '110' }
+          { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Mehnat muhofazasi", time: "10:00 - 11:20", teacher: "Hamdamova M", room: "1,5" },
+          { subject: "Matematika", time: "12:00 - 13:20", teacher: "Hudoyberdiyeva Sh ", room: "4,12" },
+          { subject: "Rus tili / ---------", time: "13:30 - 14:50", teacher: "Djurayeva S /Isaqova N / -------", room: "2,39 - 2,41" },
         ],
         Chorshanba: [
-          { subject: 'Market Research', time: '08:30 - 09:50', teacher: 'Ms. Roberts', room: '210' },
-          { subject: 'Photography Basics', time: '10:00 - 11:20', teacher: 'Mr. Lee', room: '205' },
-          { subject: 'Google Ads', time: '12:00 - 13:20', teacher: 'Mr. Peterson', room: '209' },
-          { subject: 'Consumer Behavior', time: '13:30 - 14:50', teacher: 'Dr. Morgan', room: '207' },
-          { subject: 'Content Calendar', time: '13:00 - 13:45', teacher: 'Ms. Brown', room: '208' }
+          { subject: "Tarbiya / Fizika", time: "08:30 - 09:50", teacher: "Murodov A /Saydaliyeva I", room: "3,4 - 4,15" },
+          { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Ona tili", time: "12:00 - 13:20", teacher: "Qobilova O", room: "3,11" },
+          { subject: "Tarix", time: "13:30 - 14:50", teacher: "O'rinova G ", room: "4,11" },
         ],
         Payshanba: [
-          { subject: 'Facebook Marketing', time: '08:30 - 09:50', teacher: 'Ms. Foster', room: '110' },
-          { subject: 'Instagram Strategy', time: '10:00 - 11:20', teacher: 'Ms. Foster', room: '110' },
-          { subject: 'LinkedIn Professional', time: '12:00 - 13:20', teacher: 'Ms. Roberts', room: '210' },
-          { subject: 'Analytics Tools', time: '13:30 - 14:50', teacher: 'Mr. Peterson', room: '209' },
-          { subject: 'Campaign Planning', time: '13:00 - 13:45', teacher: 'Ms. Brown', room: '208' }
+          { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Bolalar kiyimini konstuksiyalash ", time: "10:00 - 11:20", teacher: "Ms. Foster", room: "1,5" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
         ],
         Juma: [
-          { subject: 'E-commerce Marketing', time: '08:30 - 09:50', teacher: 'Ms. Roberts', room: '210' },
-          { subject: 'TikTok & Trends', time: '10:00 - 11:20', teacher: 'Ms. Foster', room: '110' },
-          { subject: 'Conversion', time: '12:00 - 13:20', teacher: 'Mr. Peterson', room: '209' },
-          { subject: 'Client Management', time: '13:30 - 14:50', teacher: 'Ms. Brown', room: '208' },
-          { subject: 'Portfolio Presentation', time: '13:00 - 13:45', teacher: 'Ms. Roberts', room: '210' }
+          { subject: "Bolalar kiyimini tikish O'A", time: "08:30 - 09:50", teacher: "Akbarova G ", room: "2,7" },
+          { subject: "Bolalar kiyimini tikish O'A ", time: "10:00 - 11:20", teacher: "Akbarova G ", room: "2,7" },
+          { subject: "Bolalar kiyimini tikish O'A ", time: "12:00 - 13:20", teacher: "Akbarova G ", room: "2,7" },
+          { subject: "Ma'naviyat soati", time: "13:30 - 14:10", teacher: "Hudoyberdiyeva Sh ", room: "4,12" },
+        ],
+        Shanba: [
+          { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Tikuvchilik materallari", time: "10:00 - 11:20", teacher: "Qurbonova N", room: "1,18" },
+          { subject: "Maxsus rasm /", time: "12:00 - 13:20", teacher: "Qurbonova N / ", room: "1,18" },
         ]
       }
-    }
+    },
+    {
+      groupNumber: "4-25",
+      groupName: "Tikuvchi",
+      schedule: {
+        Dushanba: [
+          { subject: "Informatika / Tarbiya", time: "08:30 - 09:50", teacher: "Roziqov J / Musayev I / Murodov A ", room: "2,6 - 4,4" },
+          { subject: "Tikuvchilik materallari", time: "10:00 - 11:20", teacher: "Qurbonova N", room: "1,18" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Mehnat muhofazasi", time: "13:30 - 14:50", teacher: "Qurbonova N", room: "1,18" },
+        ],
+        Seshanba: [
+          { subject: "Matematika", time: "08:30 - 09:50", teacher: "Hudoyberdiyeva Sh", room: "4,12" },
+          { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Tikuvchilik texnalogiyasi", time: "12:00 - 13:20", teacher: "Qurbonova N ", room: "1,18" },
+          { subject: "Ingliz tili", time: "13:30 - 14:50", teacher: "Yo'lchiboyeva M / Xudoyorov B ", room: "1,6 - 3,32" },
+        ],
+        Chorshanba: [
+          { subject: "Bolalar kiyimini konstuksiyalash", time: "08:30 - 09:50", teacher: "Qurbonova N", room: "1,18" },
+          { subject: "Bolalar kiyimini tikish", time: "10:00 - 11:20", teacher: "Hamdamova M", room: "1,5" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Yo'lchiboyeva M /  Xudoyorov B ", room: "1,6 - 3,32" },
+          { subject: "Tarix", time: "13:30 - 14:50", teacher: "Ro'zimatov A", room: "3,21" },
+        ],
+        Payshanba: [
+          { subject: "Bolalar kiyimini tikish O'A", time: "08:30 - 09:50", teacher: "Djurayeva N", room: "1,4" },
+          { subject: "Bolalar kiyimini tikish O'A", time: "10:00 - 11:20", teacher: "Djurayeva N", room: "1,4" },
+          { subject: "Bolalar kiyimini tikish O'A", time: "12:00 - 13:20", teacher: "Djurayeva N", room: "1,4" },
+          { subject: "Maxsus rasm /  --------------", time: "13:30 - 14:50", teacher: "Qurbonova N /", room: "1,18" },
+        ],
+        Juma: [
+          { subject: "Jismoniy tarbiya / Fizika", time: "08:30 - 09:50", teacher: "Jo'rayev N  / Saydaliyeva I ", room: "3,4 - zal" },
+          { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Yo'lchiboyeva M / Xudoyorov B", room: "1,6 - 3,32" },
+          { subject: "Ona tili", time: "12:00 - 13:20", teacher: "Qobilova O", room: "3,11" },
+          { subject: "Ma'naviyat soati", time: "13:30 - 14:10", teacher: "Ergasheva X", room: "4,9" },
+        ],
+        Shanba: [
+          { subject: "Kiyim mayda detallar i/b O'A/CHQBT", time: "08:30 - 09:50", teacher: "Djurayeva N / Aminjonov M ", room: "1,4 - 4,5" },
+          { subject: "Kiyim mayda detal i/b O'/A/ Rus tili", time: "10:00 - 11:20", teacher: "Djurayeva N / Djurayeva S-Isaqova N ", room: "1,4 - 2,39 - 2,41" },
+          { subject: "Kiyim mayda deta i/b O'A/ -------", time: "12:00 - 13:20", teacher: "Djurayeva N", room: "1,4" },
+        ]
+      }
+    },
+    {
+      groupNumber: "5-25",
+      groupName: "Tikuvchilik mahsulotlari dizayneri ",
+      schedule: {
+        Dushanba: [
+          { subject: "Tikuvchilik materialshunosligi", time: "08:30 - 09:50", teacher: "Qurbonova N", room: "1,18" },
+          { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Ohunova Z / Mahamadjonova Sh", room: "3,32" },
+          { subject: "Tarix", time: "12:00 - 13:20", teacher: "Ro'zmatov A", room: "3,21" },
+          { subject: "Rasm va  kostyum b. grafikasi / -------", time: "13:30 - 14:50", teacher: "Qurbonova N", room: "1,18" },
+        ],
+        Seshanba: [
+          { subject: "Jismoniy tarbiya / CHQBT", time: "08:30 - 09:50", teacher: "Jo'rayev N /Aminjonov M", room: "zal - 4,5" },
+          { subject: "Tikuvchili jixozlari", time: "10:00 - 11:20", teacher: "Qurbonova N", room: "1,18" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Ohunova Z / Mahamadjonova Sh", room: "3,32" },
+          { subject: "Tikuv buyumlari tikish tex./ --------", time: "13:30 - 14:50", teacher: "Hamdamova M", room: "1,5" },
+        ],
+        Chorshanba: [
+          { subject: "Rus tili / Informatika", time: "08:30 - 09:50", teacher: "Isaqova N / Djurayeva S / Musayev I", room: "2,41 - 2,6" },
+          { subject: "Tarbiya / Fizika", time: "10:00 - 11:20", teacher: "Murodov A /Saydaliyeva I", room: "3,4 - 4,15" },
+          { subject: "Matematika", time: "12:00 - 13:20", teacher: "Hudoyberdiyeva Sh", room: "4,12" },
+        ],
+        Payshanba: [
+          { subject: "Mehnat muhofazasi", time: "08:30 - 09:50", teacher: "Imomova M", room: "1,5" },
+          { subject: "Ona tili", time: "10:00 - 11:20", teacher: "Qobilova O", room: "3,12" },
+          { subject: "Loyhalash", time: "12:00 - 13:20", teacher: "Imomova M", room: "1,5" },
+          { subject: "Ingliz tili", time: "13:30 - 14:50", teacher: "Ohunova Z / Mahamadjonova Sh", room: "3,32" },
+        ],
+        Juma: [
+          { subject: "Tikuvchilik buyumlari tikish O'A / Eskiz asosida tikish O'A", time: "08:30 - 09:50", teacher: "Turg'unova S", room: "2,7" },
+          { subject: "Tikuvchilik buyumlari tikish O'A / Eskiz asosida tikish O'A", time: "10:00 - 11:20", teacher: "Turg'unova S", room: "2,7" },
+          { subject: "Tikuvchilik buyumlari tikish O'A / Eskiz asosida tikish O'A", time: "12:00 - 13:20", teacher: "Turg'unova S", room: "2,7" },
+          { subject: "Ma'naviyat soati", time: "13:30 - 14:10", teacher: "Sultonova O'", room: "3,7" },
+        ],
+        Shanba: [
+          { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Ohunova Z / Mahamadjonova Sh ", room: "3,32" },
+          { subject: "Tikuv maxsulot konsturuksiyalash / Tikuvchilik buyumlari tayyorlash", time: "10:00 - 11:20", teacher: "Imomova M", room: "1,5" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Djurayeva N", room: "3,32" },
+        ]
+      }
+    },
+    {
+      groupNumber: "6-25",
+      groupName: "Raqamli axborotlarni qayta ishlash ustasi",
+      schedule: {
+        Dushanba: [
+          { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Ohunova Z / Mahamadjonova Sh", room: "3,32" },
+          { subject: "Axborot xavfsizligi", time: "10:00 - 11:20", teacher: "Ergasheva X", room: "4,9" },
+          { subject: "Matematika", time: "12:00 - 13:20", teacher: "Jo'rayeva D", room: "4,10" },
+          { subject: "Mehnat muhofazasi", time: "13:30 - 14:50", teacher: "Ergashev O", room: "4,6" },
+        ],
+        // TODO Seshanbada qoldim !!!
+        Seshanba: [
+          { subject: "Jismoniy tarbiya / CHQBT", time: "08:30 - 09:50", teacher: "Jo'rayev N /Aminjonov M", room: "zal - 4,5" },
+          { subject: "Tikuvchili jixozlari", time: "10:00 - 11:20", teacher: "Qurbonova N", room: "1,18" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Ohunova Z / Mahamadjonova Sh", room: "3,32" },
+          { subject: "Tikuv buyumlari tikish tex./ --------", time: "13:30 - 14:50", teacher: "Hamdamova M", room: "1,5" },
+        ],
+        Chorshanba: [
+          { subject: "Rus tili / Informatika", time: "08:30 - 09:50", teacher: "Isaqova N / Djurayeva S / Musayev I", room: "2,41 - 2,6" },
+          { subject: "Tarbiya / Fizika", time: "10:00 - 11:20", teacher: "Murodov A /Saydaliyeva I", room: "3,4 - 4,15" },
+          { subject: "Matematika", time: "12:00 - 13:20", teacher: "Hudoyberdiyeva Sh", room: "4,12" },
+        ],
+        Payshanba: [
+          { subject: "Mehnat muhofazasi", time: "08:30 - 09:50", teacher: "Imomova M", room: "1,5" },
+          { subject: "Ona tili", time: "10:00 - 11:20", teacher: "Qobilova O", room: "3,12" },
+          { subject: "Loyhalash", time: "12:00 - 13:20", teacher: "Imomova M", room: "1,5" },
+          { subject: "Ingliz tili", time: "13:30 - 14:50", teacher: "Ohunova Z / Mahamadjonova Sh", room: "3,32" },
+        ],
+        Juma: [
+          { subject: "Tikuvchilik buyumlari tikish O'A / Eskiz asosida tikish O'A", time: "08:30 - 09:50", teacher: "Turg'unova S", room: "2,7" },
+          { subject: "Tikuvchilik buyumlari tikish O'A / Eskiz asosida tikish O'A", time: "10:00 - 11:20", teacher: "Turg'unova S", room: "2,7" },
+          { subject: "Tikuvchilik buyumlari tikish O'A / Eskiz asosida tikish O'A", time: "12:00 - 13:20", teacher: "Turg'unova S", room: "2,7" },
+          { subject: "Ma'naviyat soati", time: "13:30 - 14:10", teacher: "Sultonova O'", room: "3,7" },
+        ],
+        Shanba: [
+          { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Ohunova Z / Mahamadjonova Sh ", room: "3,32" },
+          { subject: "Tikuv maxsulot konsturuksiyalash / Tikuvchilik buyumlari tayyorlash", time: "10:00 - 11:20", teacher: "Imomova M", room: "1,5" },
+          { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Djurayeva N", room: "3,32" },
+        ]
+      }
+    },
   ];
 
   const getSubjectColor = (subject) => {
     const colorMap = {
       'Matematika': 'bg-blue-50 border-blue-200 hover:bg-blue-100',
-      'Physics': 'bg-teal-50 border-teal-200 hover:bg-teal-100',
+      'Tikuv buyumlari tikish tex./ --------': 'bg-teal-50 border-teal-200 hover:bg-teal-100',
       'Tarbiya': 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100',
       'Biology': 'bg-green-50 border-green-200 hover:bg-green-100',
       'English Literature': 'bg-amber-50 border-amber-200 hover:bg-amber-100',
       'Ingliz tili': 'bg-amber-50 border-amber-200 hover:bg-amber-100',
       'Tarix': 'bg-orange-50 border-orange-200 hover:bg-orange-100',
-      'Geography': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
+      'Jismoniy tarbiya / CHQBT': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
       'Informatika': 'bg-violet-50 border-violet-200 hover:bg-violet-100',
       'Fizika': 'bg-red-50 border-red-200 hover:bg-red-100',
-      'Art & Design': 'bg-pink-50 border-pink-200 hover:bg-pink-100',
+      "CHQBT / Kiyim mayda detal i/b O'/A": 'bg-pink-50 border-pink-200 hover:bg-pink-100',
       'Ona tili': 'bg-rose-50 border-rose-200 hover:bg-rose-100',
       'Rus tili': 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
       "Ma'naviyat soati": 'bg-violet-50 border-violet-200 hover:bg-violet-100',
-      'Web Design': 'bg-fuchsia-50 border-fuchsia-200 hover:bg-fuchsia-100',
-      'Database Management': 'bg-sky-50 border-sky-200 hover:bg-sky-100',
-      'JavaScript Advanced': 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
-      'UI/UX Design': 'bg-pink-50 border-pink-200 hover:bg-pink-100',
+      'CHQBT / Maxsus rasm': 'bg-fuchsia-50 border-fuchsia-200 hover:bg-fuchsia-100',
+      "Kiyim mayda detal i/b O'/A/ Rus tili": 'bg-sky-50 border-sky-200 hover:bg-sky-100',
+      'CHQBT / Jismoniy tarbiya': 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
+      'Bolalar kiyimini konstuksiyalash': 'bg-pink-50 border-pink-200 hover:bg-pink-100',
       'Server Administration': 'bg-gray-50 border-gray-200 hover:bg-gray-100',
-      'Project Management': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
+      "Jismoniy tarbiya / Fizika": 'bg-lime-50 border-lime-200 hover:bg-lime-100',
       'Kvalifikatsion amaliyot': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
-      'React Framework': 'bg-blue-50 border-blue-200 hover:bg-blue-100',
-      'CSS Advanced': 'bg-rose-50 border-rose-200 hover:bg-rose-100',
-      'API Development': 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100',
+      "Informatika /Kiyim mayda detallar i/b O'A": 'bg-blue-50 border-blue-200 hover:bg-blue-100',
+      "Tikuvchilik buyumlari tikish O'A / Eskiz asosida tikish O'A": 'bg-rose-50 border-rose-200 hover:bg-rose-100',
+      "Kiyim mayda deta i/b O'A/ -------": 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100',
+      "Maxsus rasm /  --------------": 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100',
       'Version Control': 'bg-slate-50 border-slate-200 hover:bg-slate-100',
-      'Testing & QA': 'bg-red-50 border-red-200 hover:bg-red-100',
+      "Fizika / Kiyim mayda detal i/b O'/A": 'bg-red-50 border-red-200 hover:bg-red-100',
       'Node.js Backend': 'bg-green-50 border-green-200 hover:bg-green-100',
-      'Graphic Design': 'bg-purple-50 border-purple-200 hover:bg-purple-100',
-      'Cloud Computing': 'bg-sky-50 border-sky-200 hover:bg-sky-100',
-      'Cybersecurity Basics': 'bg-red-50 border-red-200 hover:bg-red-100',
+      "Jismoniy tarbiya / Kiyim mayda detallar i/b O'A": 'bg-purple-50 border-purple-200 hover:bg-purple-100',
+      'Rus tili / Maxsus rasm': 'bg-sky-50 border-sky-200 hover:bg-sky-100',
+      'Tikuvchilik texnalogiyasi': 'bg-red-50 border-red-200 hover:bg-red-100',
       'Erkaklar kiyimini konstruksiyalash': 'bg-amber-50 border-amber-200 hover:bg-amber-100',
-      'Full Stack Project': 'bg-indigo-50 border-indigo-200 hover:bg-indigo-100',
-      'DevOps Fundamentals': 'bg-teal-50 border-teal-200 hover:bg-teal-100',
-      'Agile Methodology': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
+      "Bolalar kiyimini tikish O'A": 'bg-indigo-50 border-indigo-200 hover:bg-indigo-100',
+      'Tarbiya / Fizika': 'bg-teal-50 border-teal-200 hover:bg-teal-100',
+      'Informatika / Tarbiya': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
       'Career Development': 'bg-orange-50 border-orange-200 hover:bg-orange-100',
       'Code Review Session': 'bg-slate-50 border-slate-200 hover:bg-slate-100',
-      'Marketing Fundamentals': 'bg-blue-50 border-blue-200 hover:bg-blue-100',
-      'Social Media Strategy': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
-      'Content Creation': 'bg-pink-50 border-pink-200 hover:bg-pink-100',
+      'Bolalar kiyimini tikish': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
+      'Rasm va  kostyum b. grafikasi / -------': 'bg-pink-50 border-pink-200 hover:bg-pink-100',
       'Tikuvchilik texnologiyasi jihozlari': 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100',
-      'Email Marketing': 'bg-teal-50 border-teal-200 hover:bg-teal-100',
+      'Mehnat muhofazasi': 'bg-teal-50 border-teal-200 hover:bg-teal-100',
       'Brand Management': 'bg-violet-50 border-violet-200 hover:bg-violet-100',
-      'Video Production': 'bg-red-50 border-red-200 hover:bg-red-100',
+      'Rus tili / Informatika': 'bg-red-50 border-red-200 hover:bg-red-100',
       'Copywriting': 'bg-amber-50 border-amber-200 hover:bg-amber-100',
       'Paid Advertising': 'bg-green-50 border-green-200 hover:bg-green-100',
       'Influencer Marketing': 'bg-rose-50 border-rose-200 hover:bg-rose-100',
       'Market Research': 'bg-slate-50 border-slate-200 hover:bg-slate-100',
-      'Photography Basics': 'bg-orange-50 border-orange-200 hover:bg-orange-100',
+      'Tikuv maxsulot konsturuksiyalash / Tikuvchilik buyumlari tayyorlash': 'bg-orange-50 border-orange-200 hover:bg-orange-100',
       'Google Ads': 'bg-sky-50 border-sky-200 hover:bg-sky-100',
-      'Consumer Behavior': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
+      'Loyhalash': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
       'Content Calendar': 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
-      'Facebook Marketing': 'bg-blue-50 border-blue-200 hover:bg-blue-100',
+      'Tikuvchilik materallari': 'bg-blue-50 border-blue-200 hover:bg-blue-100',
       'Instagram Strategy': 'bg-fuchsia-50 border-fuchsia-200 hover:bg-fuchsia-100',
-      'LinkedIn Professional': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
+      'Tikuvchili jixozlari': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
       'Analytics Tools': 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100',
       'Campaign Planning': 'bg-teal-50 border-teal-200 hover:bg-teal-100',
       'E-commerce Marketing': 'bg-green-50 border-green-200 hover:bg-green-100',
-      'TikTok & Trends': 'bg-rose-50 border-rose-200 hover:bg-rose-100',
+      "Tarbiya / Kiyim mayda deta i/b O'A": 'bg-rose-50 border-rose-200 hover:bg-rose-100',
       'Conversion Optimization': 'bg-amber-50 border-amber-200 hover:bg-amber-100',
-      'Client Management': 'bg-violet-50 border-violet-200 hover:bg-violet-100',
+      'Tikuvchilik materialshunosligi': 'bg-violet-50 border-violet-200 hover:bg-violet-100',
       'Portfolio Presentation': 'bg-orange-50 border-orange-200 hover:bg-orange-100'
     };
     return colorMap[subject] || 'bg-gray-50 border-gray-200 hover:bg-gray-100';
@@ -217,7 +339,7 @@ const Schedule = () => {
               <p className="text-blue-100 text-sm">Haftalik dars jadvali</p>
             </div>
 
-            <div className={`grid grid-cols-1 lg:grid-cols-5 gap-6 ${!isOpen && "objects-hide"}`}>
+            <div className={`grid grid-cols-1 lg:grid-cols-3 gap-6 ${!isOpen && "objects-hide"}`}>
               {Object.keys(group.schedule).map((day) => (
                 <div key={day} className="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 hover:shadow-lg transition-shadow duration-300">
                   <div className="bg-gradient-to-r bg-[var(--text-color)] px-4 py-3">

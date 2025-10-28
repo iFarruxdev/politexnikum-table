@@ -83,3 +83,8 @@
     gap: 14px;
   }
 }
+@media (max-width:916.999px) {
+  .home-item {
+    width: 100%;
+  }
+}

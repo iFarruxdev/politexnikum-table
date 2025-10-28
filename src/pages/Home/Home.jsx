@@ -20,7 +20,7 @@ const Home = () => {
       </li>
       <li className="home-item home-item-2">
         <span className="home-item-content">
-          <h3 className="home-item-content-heading">Talabar</h3>
+          <h3 className="home-item-content-heading">Talabalar</h3>
           <h4 className="home-item-content-value font-bold">38</h4>
         </span>
         <span className="home-item-image home-item-image-2">

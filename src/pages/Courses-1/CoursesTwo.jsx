@@ -45,6 +45,12 @@ const CoursesTwo = () => {
           { subject: 'Kvalifikatsion amaliyot', time: '10:00 - 11:20', teacher: 'I/ch korxona', room: '00' },
           { subject: 'Kvalifikatsion amaliyot', time: '12:00 - 13:20', teacher: 'I/ch korxona', room: '00' },
           { subject: 'English Literature', time: '13:30 - 14:50', teacher: 'Ms. Williams', room: '105' }
+        ],
+        Shanba: [
+          { subject: 'Kvalifikatsion amaliyot', time: '08:30 - 09:50', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '10:00 - 11:20', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '12:00 - 13:20', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'English Literature', time: '13:30 - 14:50', teacher: 'Ms. Williams', room: '105' }
         ]
       }
     },
@@ -86,6 +92,12 @@ const CoursesTwo = () => {
           { subject: 'Agile Methodology', time: '12:00 - 13:20', teacher: 'Ms. Roberts', room: '210' },
           { subject: 'Career Development', time: '13:30 - 14:50', teacher: 'Ms. Foster', room: '110' },
           { subject: 'Code Review Session', time: '13:00 - 13:45', teacher: 'Mr. Davis', room: '402' }
+        ],
+        Shanba: [
+          { subject: 'Kvalifikatsion amaliyot', time: '08:30 - 09:50', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '10:00 - 11:20', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '12:00 - 13:20', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'English Literature', time: '13:30 - 14:50', teacher: 'Ms. Williams', room: '105' }
         ]
       }
     },
@@ -127,6 +139,12 @@ const CoursesTwo = () => {
           { subject: 'Conversion', time: '12:00 - 13:20', teacher: 'Mr. Peterson', room: '209' },
           { subject: 'Client Management', time: '13:30 - 14:50', teacher: 'Ms. Brown', room: '208' },
           { subject: 'Portfolio Presentation', time: '13:00 - 13:45', teacher: 'Ms. Roberts', room: '210' }
+        ],
+        Shanba: [
+          { subject: 'Kvalifikatsion amaliyot', time: '08:30 - 09:50', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '10:00 - 11:20', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'Kvalifikatsion amaliyot', time: '12:00 - 13:20', teacher: 'I/ch korxona', room: '00' },
+          { subject: 'English Literature', time: '13:30 - 14:50', teacher: 'Ms. Williams', room: '105' }
         ]
       }
     }
