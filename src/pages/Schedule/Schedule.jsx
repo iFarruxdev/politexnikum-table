@@ -82,6 +82,7 @@ const Schedule = () => {
       'Tikuv maxsulot konsturuksiyalash / Tikuvchilik buyumlari tayyorlash': 'bg-orange-50 border-orange-200 hover:bg-orange-100',
       'Fizika / Rus tili': 'bg-sky-50 border-sky-200 hover:bg-sky-100',
       'Loyhalash': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
+      'Avtomobil tuzilishi': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
       "Raqamli axborot qayta ishlash O'A / Jismoniy tarbiya": 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
       'Tikuvchilik materallari': 'bg-blue-50 border-blue-200 hover:bg-blue-100',
       'Instagram Strategy': 'bg-fuchsia-50 border-fuchsia-200 hover:bg-fuchsia-100',
@@ -91,8 +92,14 @@ const Schedule = () => {
       'Raqamli axborot qayta ishlash': 'bg-green-50 border-green-200 hover:bg-green-100',
       "Tarbiya / Kiyim mayda deta i/b O'A": 'bg-rose-50 border-rose-200 hover:bg-rose-100',
       "Raqamli axborot qayta ishlash O'A/ CHQBT": 'bg-amber-50 border-amber-200 hover:bg-amber-100',
+      "Biznes asoslari / Mehnat muhofazasi": 'bg-amber-50 border-amber-200 hover:bg-amber-100',
+      "Mehnat muhofazasi / Ingliz tili": 'bg-amber-50 border-amber-200 hover:bg-amber-100',
       'Tikuvchilik materialshunosligi': 'bg-violet-50 border-violet-200 hover:bg-violet-100',
-      'Axborot texnologilari': 'bg-orange-50 border-orange-200 hover:bg-orange-100'
+      'Axborot texnologilari': 'bg-orange-50 border-orange-200 hover:bg-orange-100',
+      "Traktor va qishloq xo'jaligi agregatlari": 'bg-orange-50 border-orange-200 hover:bg-orange-100',
+      "Biznes asoslari / Yo'l harakati": 'bg-orange-50 border-orange-200 hover:bg-orange-100',
+      "Yo'l harakati qoidalari": 'bg-orange-50 border-orange-200 hover:bg-orange-100',
+      "Tarbiya / Jismoniy tarbiya": 'bg-orange-50 border-orange-200 hover:bg-orange-100',
     };
     return colorMap[subject] || 'bg-gray-50 border-gray-200 hover:bg-gray-100';
   };
