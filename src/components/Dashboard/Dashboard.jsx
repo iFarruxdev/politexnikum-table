@@ -44,7 +44,7 @@ const Dashboard = ({toggleBar , setToggleBar}) => {
           <li className="dashboard-item">
             <NavLink onClick={() => setToggleBar(!toggleBar)} className='dashboard-link' to='subject'>
               <MenuBookIcon sx={{fontSize:'24px',marginBottom:'2.5px'}} className='dashboard-link-icon' />
-              <span>fanlar</span>
+              <span>kutubxona</span>
             </NavLink>
           </li>
         </ul>

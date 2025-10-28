@@ -2,7 +2,7 @@ import './Teachers.css'
 
 const Teachers = () => {
   return (
-    <div>Teachers</div>
+    <div className='teacher-index'><h2 className='select-none'>Jarayonda..... ⌛</h2></div>
   )
 }
 

@@ -2,7 +2,7 @@ import './Subjects.css'
 
 const Subjects = () => {
   return (
-    <div>Subjects</div>
+    <div className='subject-index'><h2 className='select-none'>Jarayonda..... ⌛</h2></div>
   )
 }
 

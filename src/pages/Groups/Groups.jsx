@@ -2,7 +2,7 @@ import './Groups.css'
 
 const Groups = () => {
   return (
-    <div>Groups</div>
+    <div className='groups-index'><h2 className='select-none'>Jarayonda..... ⌛</h2></div>
   )
 }
 
