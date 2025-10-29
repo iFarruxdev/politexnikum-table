@@ -1,6 +1,7 @@
-.home-section {
+.home-header-section {
   width: 100%;
   padding: 30px 0px;
+  margin-bottom: 40px;
 }
 .index-home-list {
   display: flex;
@@ -83,8 +84,48 @@
     gap: 14px;
   }
 }
-@media (max-width:916.999px) {
+@media (max-width:936.999px) {
   .home-item {
     width: 100%;
+  }
+}
+
+
+/* DIAGRAMMA MINI */
+
+.home-diagramms {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.css-uqbd1z-MuiChartsWrapper-root {
+  display: block !important;
+  justify-items: start !important;
+}
+
+.box {
+  width: 575px;
+  height: 175px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+@media (max-width:1107.999px) {
+  .css-uqbd1z-MuiChartsWrapper-root {
+    display: grid !important;
+    justify-items: center !important;
+  }
+  .box {
+    width: 100%;
+    margin-top: 50px;
   }
 }

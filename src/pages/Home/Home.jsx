@@ -3,9 +3,11 @@ import SchoolIcon from '@mui/icons-material/School';
 import GroupIcon from '@mui/icons-material/Group';
 import PlaceIcon from '@mui/icons-material/Place';
 import StarIcon from '@mui/icons-material/Star';
+import Diagramma from "../../components/Diagramma/Diagramma";
 
 const Home = () => {
-  return <section className="home-section">
+  return <div>
+    <section className="home-header-section">
     {/* <h1>Home Section</h1> */}
     <ul className="index-home-list">
       <div className="index-home-item-wrapper">
@@ -47,7 +49,12 @@ const Home = () => {
       </li>
       </div>
     </ul>
-  </section>;
+  </section>
+  <section className="home-diagramms">
+   <Diagramma />
+   <div className="box"><h2>Jarayonda... ⌛</h2></div>
+  </section>
+  </div>;
 };
 
 export default Home;
