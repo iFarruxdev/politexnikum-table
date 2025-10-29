@@ -694,12 +694,90 @@ export const groups = [
         { subject: "Rus tili / Informatika", time: "08:30 - 09:50", teacher: "Xolmatova A / Boymirzayev F / Abdusalomov D", room: "2,22 - 4,9 - 2,4" },
         { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Oripova  Y", room: "1,13" },
         { subject: "Mehnat muhofazasi", time: "12:00 - 13:20", teacher: "Haminjonov U", room: "1,23" },
-        { subject: "Ma'naviyat soati", time: "12:00 - 13:20", teacher: "Yulchiboyeva M", room: "1,6" },
+        { subject: "Ma'naviyat soati", time: "13:30 - 14:50", teacher: "Yulchiboyeva M", room: "1,6" },
       ],
       Shanba: [
         { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Oripova Y", room: "1,6" },
         { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Oripova Y", room: "1,13" },
         { subject: "Avto elektr va elektr jixozlari", time: "12:00 - 13:20", teacher: "Qulmatov SH", room: "1,42" },
+      ]
+    }
+  },
+  {
+    groupNumber: "19-25",
+    groupName: "Avtomobillarni ta'mirlash va ularga xizmat  ko'rsatish",
+    schedule: {
+      Dushanba: [
+        { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Jismoniy tarbiya / Informatika", time: "10:00 - 11:20", teacher: "Sheraliyev E / Boymirzayev F / Abdusalomov D", room: "zal - 3,9 - 2,4" },
+        { subject: "Fizika", time: "12:00 - 13:20", teacher: "Yo'ldashev B", room: "3,15" },
+      ],
+      Seshanba: [
+        { subject: "Matematika", time: "08:30 - 09:50", teacher: "Abdurahimov A", room: "4,14" },
+        { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Tarix", time: "12:00 - 13:20", teacher: "Omonov A", room: "1,12" },
+        { subject: "Mehnat muhofazasi", time: "13:30 - 14:50", teacher: "Haminjonov U", room: "1,23" },
+      ],
+      Chorshanba: [
+        { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Avto elektr va elektr jixozlari", time: "10:00 - 11:20", teacher: "Qulmatov SH", room: "1,41" },
+        { subject: "Avtomabil tuzulishi", time: "12:00 - 13:20", teacher: "Sultonov H", room: "1,42" },
+      ],
+      Payshanba: [
+        { subject: "Rus tili / Biznes asoslari O'A", time: "08:30 - 09:50", teacher: "Xolmatova A / Jo'rayeva  A / Mamadiyeva Sh", room: "2,22 - 3,6" },
+        { subject: "Tarbiya / Biznes asoslari O'A", time: "10:00 - 11:20", teacher: "Uzoqova N / Mamadiyeva Sh", room: "1,1 - 3,6" },
+        { subject: "CHQBT / Biznes asoslari O'A", time: "12:00 - 13:20", teacher: "Nazarov A / Mamadiyeva Sh", room: "4,13 - 3,6" },
+        { subject: "Ingliz tili", time: "13:30 - 14:50", teacher: "Oripova Y", room: "1,13" },
+      ],
+      Juma: [
+        { subject: "Ingliz tili", time: "08:30 - 09:50", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Texnikaviy chizmachilik", time: "10:00 - 11:20", teacher: "Haminjonov U", room: "1,23" },
+        { subject: "Ona tili", time: "12:00 - 13:20", teacher: "Xaydarova X", room: "3,7" },
+        { subject: "Ma'naviyat soati", time: "13:30 - 14:50", teacher: "Fayzmatova E", room: "1,39" },
+      ],
+      Shanba: [
+        { subject: "Chilangarlik Ishi O'A / Avtomabil tuzulishi O'A", time: "08:30 - 09:50", teacher: "Abdullayeva O", room: "ustaxona" },
+        { subject: "Chilangarlik Ishi O'A / Avtomabil tuzulishi O'A", time: "10:00 - 11:20", teacher: "Abdullayeva O", room: "ustaxona" },
+        { subject: "Chilangarlik Ishi O'A / Avtomabil tuzulishi O'A", time: "12:00 - 13:20", teacher: "Abdullayeva O", room: "ustaxona" },
+      ]
+    }
+  },
+  {
+    groupNumber: "20-25",
+    groupName: "Avtomobillarni ta'mirlash va ularga xizmat  ko'rsatish",
+    schedule: {
+      Dushanba: [
+        { subject: "Informatika / Jismoniy tarbiya", time: "08:30 - 09:50", teacher: "Boymirzayev F / Abdusalomov D / Sobirov S", room: "4,9 - 4,4" },
+        { subject: "Ingliz tili", time: "10:00 - 11:20", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Matematika", time: "12:00 - 13:20", teacher: "Sultonova O'", room: "3,7" },
+      ],
+      Seshanba: [
+        { subject: "Fizika", time: "08:30 - 09:50", teacher: "Yo'ldashev B", room: "4,15" },
+        { subject: "Tarix", time: "10:00 - 11:20", teacher: "Omonov A", room: "1,12" },
+        { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Ingliz tili", time: "13:30 - 14:50", teacher: "Oripova Y", room: "1,13" },
+      ],
+      Chorshanba: [
+        { subject: "Avtomabil tuzulishi", time: "08:30 - 09:50", teacher: "Sultonov H", room: "1,42" },
+        { subject: "Ona tili", time: "10:00 - 11:20", teacher: "Xaydarova X", room: "3,7" },
+        { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Mehnat muhofazasi", time: "12:00 - 13:20", teacher: "Haminjonov U", room: "1,23" },
+      ],
+      Payshanba: [
+        { subject: "Biznes asoslari O'A / CHQBT", time: "08:30 - 09:50", teacher: "Mamadiyeva Sh  / Nazarov A", room: "3,12 - 4,13" },
+        { subject: "Biznes asoslari O'A / Tarbiya", time: "10:00 - 11:20", teacher: "Mamadiyeva Sh / Uzoqova N", room: "3,12 - 1,1" },
+        { subject: "Biznes asoslari O'A / Rus tili", time: "12:00 - 13:20", teacher: "Mamadiyeva Sh / Xolmatova A", room: "3,12 - 2,22" },
+      ],
+      Juma: [
+        { subject: "Texnikaviy chizmachilik", time: "08:30 - 09:50", teacher: "Haminjonov U", room: "1,23" },
+        { subject: "Avto elektr va elektr jixozlari", time: "10:00 - 11:20", teacher: "Qulmatov SH", room: "1,41" },
+        { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Oripova Y", room: "1,13" },
+        { subject: "Ma'naviyat soati", time: "13:30 - 14:50", teacher: "Kenjaboyev S", room: "3,18" },
+      ],
+      Shanba: [
+        { subject: "Chilangarlik Ishi O'A / Avtomabil tuzulishi O'A", time: "08:30 - 09:50", teacher: "Teshaboyeva D", room: "ustaxona" },
+        { subject: "Chilangarlik Ishi O'A / Avtomabil tuzulishi O'A", time: "10:00 - 11:20", teacher: "Teshaboyeva D", room: "ustaxona" },
+        { subject: "Chilangarlik Ishi O'A / Avtomabil tuzulishi O'A", time: "12:00 - 13:20", teacher: "Teshaboyeva D", room: "ustaxona" },
       ]
     }
   },
