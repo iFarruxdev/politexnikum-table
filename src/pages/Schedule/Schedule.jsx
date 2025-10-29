@@ -93,6 +93,7 @@ const Schedule = () => {
       'Avtomobil tuzilishi': 'bg-lime-50 border-lime-200 hover:bg-lime-100',
       "Raqamli axborot qayta ishlash O'A / Jismoniy tarbiya": 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
       "Biznes asoslari O'A / Tarbiya": 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
+      "Biznes asoslari O'A / Rus tili": 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
       'Tikuvchilik materallari': 'bg-blue-50 border-blue-200 hover:bg-blue-100',
       'Instagram Strategy': 'bg-fuchsia-50 border-fuchsia-200 hover:bg-fuchsia-100',
       'Tikuvchili jixozlari': 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100',
