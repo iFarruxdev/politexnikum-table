@@ -891,12 +891,50 @@ export const groups = [
         { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Usmonova M / Turdaliyeva M", room: "2,37 - 1,16" },
         { subject: "Ma'naviyat soati", time: "13:30 - 14:50", teacher: "Xaydarova X", room: "3,7" },
       ],
-      // TODO Shanba kuunida qoldim !!!
       Shanba: [
-        { subject: "Avto elektr va elektr jixozlari", time: "08:30 - 09:50", teacher: "Mamadaliyev O'", room: "1,41" },
-        { subject: "Fizika", time: "10:00 - 11:20", teacher: "Yo'ldashev B", room: "4,15" },
-        { subject: "Tarix", time: "12:00 - 13:20", teacher: "Omonov A", room: "1,12" },
-        { subject: "Ingliz tili", time: "12:00 - 13:20", teacher: "Usmonova M / Turdaliyeva M ", room: "2,37 - 1,16" },
+        { subject: "Rus tili / Oshpazlik taomlarini tayyorlash O'A", time: "08:30 - 09:50", teacher: "Urunova M / Vaxobova R", room: "2,22 - 1,36" },
+        { subject: "Matematika / Oshpazlik taomlarini  tayyorlash O'A", time: "10:00 - 11:20", teacher: "Haminjonov E / Vaxobova R", room: "1,23 - 1,36" },
+        { subject: "Tarbiya / Oshpazlik taomlarini tayyorlash O'A", time: "12:00 - 13:20", teacher: "Uzoqova N / Vaxobova R", room: "1,1 - 1,36" },
+      ]
+    }
+  },
+  {
+    groupNumber: "24-25",
+    groupName: "Sotuvchi, nazoratchi-kassir (Dual)",
+    schedule: {
+      Dushanba: [
+        { subject: "CHQBT", time: "08:30 - 09:50", teacher: "Nazarov A", room: "4,15" },
+        { subject: "Fizika", time: "10:00 - 11:20", teacher: "Mirzakarimova M", room: "3,15" },
+        { subject: "Mehnat muhofazasi / Bugalteriya hisobi", time: "12:00 - 13:20", teacher: "Fayzimatov E / Abdullayeva S", room: "1,39 - 2,37" },
+        { subject: "Tarix", time: "13:30 - 14:50", teacher: "Omonov A", room: "1,12" },
+      ],
+      Seshanba: [
+        { subject: "Matematika", time: "08:30 - 09:50", teacher: "Haminjonov E", room: "3,17" },
+        { subject: "Rus tili", time: "10:00 - 11:20", teacher: "Xolmatova A / Jo'rayeva Y", room: "2,22 - 2,39" },
+        { subject: "Ona tili", time: "12:00 - 13:20", teacher: "Rahimova M", room: "3,5" },
+        { subject: "Ingliz tili / Nazorat kassa aparatlari", time: "13:30 - 14:50", teacher: "Ibragimova F / Mamadiyeva Sh", room: "2,37 - 1,16" },
+      ],
+      Chorshanba: [
+        { subject: "Marketing tovarshunosligi / Jismoniy tarbiya ", time: "08:30 - 09:50", teacher: "Abdullayeva S / Soxiboyev Y", room: "2,37 - zal" },
+        { subject: "Informatika", time: "10:00 - 11:20", teacher: "Abdusalomov D / Boymirzayev F", room: "2,4 - 4,9" },
+        { subject: "Nazorat kassa apparatlari", time: "12:00 - 13:20", teacher: "Mamadiyeva Sh", room: "3,17" },
+        { subject: "Chakana savdoni tashkil etish", time: "13:30 - 14:50", teacher:"Abdullayeva S", room: "2,37" },
+      ],
+      Payshanba: [
+        { subject: "Tarbiya", time: "08:30 - 09:50", teacher: "O'rinova G", room: "4,11" },
+        { subject: "Matematika", time: "10:00 - 11:20", teacher: "Haminjonov E", room: "3,17" },
+        { subject: "Ma'naviyat soati", time: "12:00 - 13:20", teacher: "Tursunova G", room: "3,6" },
+        { subject: "Ingliz tili", time: "13:30 - 14:50", teacher: "Ibragimova F / Usmonova M", room: "1,16 - 2,37" },
+      ],
+      Juma: [
+        { subject: "Kvalifikatsion amaliyot", time: "08:30 - 09:50", teacher: "I/ch korxona", room: "00" },
+        { subject: "Kvalifikatsion amaliyot", time: "10:00 - 11:20", teacher: "I/ch korxona", room: "00" },
+        { subject: "Kvalifikatsion amaliyot", time: "12:00 - 13:20", teacher: "I/ch korxona", room: "00" },
+      ],
+      Shanba: [
+        { subject: "Kvalifikatsion amaliyot", time: "08:30 - 09:50", teacher: "I/ch korxona", room: "00" },
+        { subject: "Kvalifikatsion amaliyot", time: "10:00 - 11:20", teacher: "I/ch korxona", room: "00" },
+        { subject: "Kvalifikatsion amaliyot", time: "12:00 - 13:20", teacher: "I/ch korxona", room: "00" },
       ]
     }
   },
