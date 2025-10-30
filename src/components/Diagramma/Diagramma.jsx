@@ -3,8 +3,8 @@ import * as React from 'react';
 import { PieChart, pieArcLabelClasses } from '@mui/x-charts/PieChart';
 
 const data = [
-  { label: "O'g'il bololar", value: 700, color: '#0088FE' },
-  { label: 'Qiz bolalar', value: 500, color: '#FF8042' },
+  { label: "O'g'il bololar", value: 700, color: 'var(--decorative-color-1)' },
+  { label: 'Qiz bolalar', value: 500, color: 'var(--decorative-color-3)' },
 ];
 
 const sizing = {
