@@ -4,6 +4,7 @@ import GroupIcon from '@mui/icons-material/Group';
 import PlaceIcon from '@mui/icons-material/Place';
 import StarIcon from '@mui/icons-material/Star';
 import Diagramma from "../../components/Diagramma/Diagramma";
+import Analytics from "../../components/Analytics/Analytics";
 
 const Home = () => {
   return <div>
@@ -51,8 +52,8 @@ const Home = () => {
     </ul>
   </section>
   <section className="home-diagramms">
+   <Analytics className="analytics" />
    <Diagramma />
-   <div className="box"><h2>Jarayonda... ⌛</h2></div>
   </section>
   </div>;
 };
