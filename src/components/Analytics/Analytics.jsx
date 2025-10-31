@@ -32,9 +32,9 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 const data = [
-  { name: 'Katta o‘qituvchilar', "soni 64": 20, color: 'var(--decorative-color-1)' },
-  { name: 'Yetakchi o‘qituvchilar', "soni 64": 30, color: 'var(--decorative-color-2)' },
-  { name: 'Oliy o‘qituvchilar', "soni 64": 40, color: 'var(--decorative-color-3)' },
+  { name: 'Katta o‘qituvchilar', "umumiy: 90": 20, color: 'var(--decorative-color-1)' },
+  { name: 'Yetakchi o‘qituvchilar', "umumiy: 90": 30, color: 'var(--decorative-color-2)' },
+  { name: 'Oliy o‘qituvchilar', "umumiy: 90": 40, color: 'var(--decorative-color-3)' },
 ];
 
 const CustomLegendBelow = ({ items }) => {
@@ -87,7 +87,6 @@ const StackedBarChart = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        marginBottom:'50px'
       }}
     >
       <ResponsiveContainer width="100%" height="100%">
@@ -105,7 +104,7 @@ const StackedBarChart = () => {
           <YAxis width="auto" />
           <Tooltip content={<CustomTooltip />} />
           <Legend />
-          <Bar dataKey="soni 64" stackId="a" fill="#192336">
+          <Bar dataKey="umumiy: 90" stackId="a" fill="#192336">
             {data.map((item, index) => (
               <Cell key={`cell-${index}`} fill={item.color} />
             ))}
