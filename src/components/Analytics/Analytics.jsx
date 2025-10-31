@@ -87,6 +87,7 @@ const StackedBarChart = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        marginBottom:'50px'
       }}
     >
       <ResponsiveContainer width="100%" height="100%">
