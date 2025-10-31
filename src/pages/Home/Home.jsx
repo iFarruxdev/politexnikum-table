@@ -52,7 +52,11 @@ const Home = () => {
     </ul>
   </section>
   <section className="home-diagramms">
-   <Analytics className="analytics" />
+   {/* <h1>Diagramms</h1> */}
+   <div className="teacher-sect">
+    <h2 className="teacher-sect-title">O'qituvchiar toifalari</h2>
+   <Analytics />
+   </div>
    <Diagramma />
   </section>
   </div>;

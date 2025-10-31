@@ -9,6 +9,7 @@ import Groups from './pages/Groups/Groups'
 import Courses from './pages/Courses/Courses'
 import CoursesTwo from './pages/Courses-1/CoursesTwo'
 import { useState } from "react";
+import Admin from './pages/Admin/Admin'
 
 function App() {
   let [toggleBar, setToggleBar] = useState(false);
@@ -20,6 +21,10 @@ function App() {
         {
           index: true,
           element: <Home />
+        },
+        {
+          path:'adminPanel',
+          element: <Admin />
         },
         {
           path: "schedule",
