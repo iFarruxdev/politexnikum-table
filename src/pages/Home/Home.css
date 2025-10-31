@@ -120,12 +120,14 @@
   .css-uqbd1z-MuiChartsWrapper-root {
     display: grid !important;
     justify-items: center !important;
-    margin-top: 150px !important;
   }
 }
 
 @media (max-width:540.9px) {
   tspan {
     display: none !important;
+  }
+  .css-uqbd1z-MuiChartsWrapper-root {
+    margin-top: 50px !important;
   }
 }
