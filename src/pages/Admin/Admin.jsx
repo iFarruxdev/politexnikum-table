@@ -1,5 +1,7 @@
 import { useState , useEffect } from 'react';
 import './Admin.css';
+import SideBar from '../../components/SideBar/SideBar';
+import { Outlet } from 'react-router-dom';
 
 const Admin = () => {
   const [password, setPassword] = useState('');
@@ -38,9 +40,14 @@ const Admin = () => {
   }
 
   return (
-    <section className="index-admin">
-      <h1>Admin sahifasi</h1>
+    <div>
+      <section className="index-admin">
+      <SideBar />
     </section>
+    <section className='admin-content'>
+      <Outlet />
+    </section>
+    </div>
   );
 };
 

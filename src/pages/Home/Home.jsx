@@ -57,7 +57,10 @@ const Home = () => {
     <h2 className="teacher-sect-title">O'qituvchiar toifalari</h2>
    <Analytics />
    </div>
-   <Diagramma />
+   <div className="students-sect">
+    <h2 className="teacher-sect-title student-title">O'quvchilar toifalari</h2>
+    <Diagramma />
+   </div>
   </section>
   </div>;
 };
