@@ -11,7 +11,7 @@ import CoursesTwo from "./pages/Courses-1/CoursesTwo";
 import { useState } from "react";
 import Admin from "./pages/Admin/Admin";
 import AdminPanelLayout from "./layout/adminPanelLayout/AdminPanelLayout";
-import AdnHome from "./pages/adminHome/adnHome";
+import AdnHome from "./pages/AdminHome/AdnHome";
 import AdminSchedule from "./pages/AdminSchedules/AdminSchedule";
 import AdminTeacher from "./pages/AdminTeachers/AdminTeacher";
 import AdminGroups from "./pages/AdminGroups/AdminGroups";
