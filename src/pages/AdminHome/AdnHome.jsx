@@ -2,7 +2,9 @@ import './AdnHome.css'
 
 const AdnHome = () => {
   return (
-    <div>adnHome</div>
+    <div>
+      <h1>Bosh sahifa bo'limi jarayonda... ⌛</h1>
+    </div>
   )
 }
 

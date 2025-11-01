@@ -10,15 +10,22 @@ import Courses from "./pages/Courses/Courses";
 import CoursesTwo from "./pages/Courses-1/CoursesTwo";
 import { useState } from "react";
 import Admin from "./pages/Admin/Admin";
-import AdminPanelLayout from "./layout/AdminPanelLayout/AdminPanelLayout";
+import AdminPanelLayout from "./layout/adminPanelLayout/AdminPanelLayout";
 import AdnHome from "./pages/adminHome/adnHome";
 import AdminSchedule from "./pages/AdminSchedules/AdminSchedule";
 import AdminTeacher from "./pages/AdminTeachers/AdminTeacher";
 import AdminGroups from "./pages/AdminGroups/AdminGroups";
 import AdminLibary from "./pages/AdminLibary/AdminLibary";
+import Login from "./pages/Login/Login"
 
 function App() {
   let [toggleBar, setToggleBar] = useState(false);
+  const access = localStorage.getItem("access");
+
+  if (!access) {
+    return <Login />;
+  }
+
   const routes = createBrowserRouter([
     {
       path: "",

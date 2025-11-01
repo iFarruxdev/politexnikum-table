@@ -132,6 +132,19 @@
   margin-bottom: 80px;
 }
 
+@media (max-width:1519.9px) {
+  .students-sect {
+    max-width: 100%;
+  }
+  .teacher-sect {
+    margin-bottom: 140px;
+    width: 100%;
+    max-width: 1210px;
+    display: grid !important;
+    justify-items: center !important;
+  }
+}
+
 @media (max-width:454.9px) {
   .teacher-sect .teacher-sect-title {
     font-size: 24px;
@@ -146,21 +159,11 @@
 }
 
 @media (max-width:1219.9px) {
-  .teacher-sect {
-    margin-bottom: 140px;
-  }
   .students-sect {
     height: 300px;
   }
   .student-title {
     margin-bottom: 40px;
-  }
-}
-
-@media (max-width:1107.999px) {
-  .css-uqbd1z-MuiChartsWrapper-root {
-    display: grid !important;
-    justify-items: center !important;
   }
 }
 

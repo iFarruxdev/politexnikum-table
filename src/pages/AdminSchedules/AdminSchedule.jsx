@@ -2,7 +2,9 @@ import './AdminSchedule.css'
 
 const AdminSchedule = () => {
   return (
-    <div>AdminSchedule</div>
+    <div>
+      <h1>Jadval bo'limi jarayonda... ⌛</h1>
+    </div>
   )
 }
 

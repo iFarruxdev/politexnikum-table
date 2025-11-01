@@ -2,7 +2,9 @@ import './AdminLibary.css'
 
 const AdminLibary = () => {
   return (
-    <div>AdminLibary</div>
+    <div>
+      <h1>Kutubxona bo'limi jarayonda... ⌛</h1>
+    </div>
   )
 }
 

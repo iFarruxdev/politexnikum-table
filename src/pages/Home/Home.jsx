@@ -54,7 +54,7 @@ const Home = () => {
   <section className="home-diagramms">
    {/* <h1>Diagramms</h1> */}
    <div className="teacher-sect">
-    <h2 className="teacher-sect-title">O'qituvchiar toifalari</h2>
+    <h2 className="teacher-sect-title">O'qituvchilar toifalari</h2>
    <Analytics />
    </div>
    <div className="students-sect">

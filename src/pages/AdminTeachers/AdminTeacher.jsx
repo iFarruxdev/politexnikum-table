@@ -2,7 +2,9 @@ import './AdminTeacher.css'
 
 const AdminTeacher = () => {
   return (
-    <div>AdminTeacher</div>
+    <div>
+      <h1>Teachers bo'limi jarayonda... ⌛</h1>
+    </div>
   )
 }
 
