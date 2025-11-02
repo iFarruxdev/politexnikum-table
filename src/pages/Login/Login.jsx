@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Login.css"
+import "./Login.css";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -8,37 +8,51 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username.trim() === "iFarruxdev" && code === "2008") {
-      localStorage.setItem("access", "true");
+
+    if (username.trim() === "dangarapolitech" && code === "dangarapolitexnikum") {
+      localStorage.setItem("access", "user");
       localStorage.setItem("username", username);
-      window.location.reload();
-    } else {
-      setError("Username yoki parol noto‘g‘ri!");
+      window.location.href = "/";
+      return;
     }
+
+    if (username.trim() === "adminpolitech" && code === "dangarapolitech") {
+      localStorage.setItem("access", "admin");
+      localStorage.setItem("username", username);
+      window.location.href = "/adn/adminpanel/adnHome";
+      return;
+    }
+
+    setError("Username yoki parol noto‘g‘ri!");
   };
 
   return (
     <div className="site-auth">
       <div className="site-auth-box">
-      <h2 className="site-auth-heading">Kirish</h2>
-      <form onSubmit={handleSubmit}>
-        <input
+        <img className="site-auth-image" src="/uzbekistan-gerb-image.png" alt="Uzbekistan gerb image for login modal" srcSet="/uzbekistan-gerb-image.png 1x , /uzbekistan-gerb-image@2x.png 2x" width={40} height={40} />
+        <h2 className="site-auth-heading">Dang'ara shahrining 1-politexnikum kollejiga kirish tizimi</h2>
+        <form onSubmit={handleSubmit}>
+          <input
             type="text"
             className="site-auth-input"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Username kiriting"
+            required
           />
-        <input
-          type="password"
-          className="site-auth-input"
-          value={code}
-          onChange={(e) => setCode(e.target.value)}
-          placeholder="Parolni kiriting"
-        />
-        <button className="site-auth-btn" type="submit">Kirish</button>
-      </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+          <input
+            type="password"
+            className="site-auth-input"
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+            placeholder="Parolni kiriting"
+            required
+          />
+          <button className="site-auth-btn" type="submit">
+            Kirish
+          </button>
+        </form>
+        {error && <p style={{ color: "red" , marginRight:'auto' , marginTop:'10px'}}>{error}</p>}
       </div>
     </div>
   );
