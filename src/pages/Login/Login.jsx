@@ -9,9 +9,9 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const current_auth_version = "4";
+    const current_auth_version = "5";
 
-    if (username.trim() === "newLogin" && code === "newPassword") {
+    if (username.trim() === "pushLogin" && code === "pushPassword") {
       localStorage.setItem("access", "user");
       localStorage.setItem("username", username);
       localStorage.setItem("authVersion", current_auth_version);

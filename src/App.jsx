@@ -23,18 +23,18 @@ function App() {
   const [checkedAuth, setCheckedAuth] = useState(false);
   const access = localStorage.getItem("access");
 
-  // ✅ authVersion check
+  // ✅ authVersion check (faqat bitta joyda)
   useEffect(() => {
     const checkAuthVersion = async () => {
       try {
-        const res = await fetch("/api/auth-version");
+        const res = await fetch("/auth-version.json");
         const data = await res.json();
         const serverVer = data.authVersion;
         const localVer = localStorage.getItem("authVersion");
 
-        // 🔒 Versiyalar mos emas — foydalanuvchini chiqaramiz
         if (localVer !== String(serverVer)) {
           localStorage.clear();
+          localStorage.setItem("authVersion", serverVer);
           window.location.reload();
         } else {
           setCheckedAuth(true);
@@ -47,13 +47,8 @@ function App() {
     checkAuthVersion();
   }, []);
 
-  // ⏳ Yuklanish bosqichi
   if (!checkedAuth) return null;
-
-  // 🔐 Kirilmagan foydalanuvchi
-  if (!access) {
-    return <Login />;
-  }
+  if (!access) return <Login />;
 
   const routes = createBrowserRouter([
     {
