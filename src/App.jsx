@@ -32,10 +32,9 @@ function App() {
         const serverVer = data.authVersion;
         const localVer = localStorage.getItem("authVersion");
 
+        // 🔒 Versiyalar mos emas — foydalanuvchini chiqaramiz
         if (localVer !== String(serverVer)) {
-          // Local auth eskirgan bo‘lsa, tozalaymiz
           localStorage.clear();
-          localStorage.setItem("authVersion", serverVer);
           window.location.reload();
         } else {
           setCheckedAuth(true);
@@ -48,8 +47,10 @@ function App() {
     checkAuthVersion();
   }, []);
 
-  if (!checkedAuth) return null; // Loading bosqichi
+  // ⏳ Yuklanish bosqichi
+  if (!checkedAuth) return null;
 
+  // 🔐 Kirilmagan foydalanuvchi
   if (!access) {
     return <Login />;
   }
@@ -59,10 +60,7 @@ function App() {
       path: "",
       element: <Layout toggleBar={toggleBar} setToggleBar={setToggleBar} />,
       children: [
-        {
-          index: true,
-          element: <Home />,
-        },
+        { index: true, element: <Home /> },
         {
           path: "adn",
           element: <AdminPanelLayout />,
