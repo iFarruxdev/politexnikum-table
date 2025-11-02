@@ -11,7 +11,7 @@ const Login = () => {
 
     const current_auth_version = "3";
 
-    if (username.trim() === "dangarapolitech" && code === "dangarapolitexnikum") {
+    if (username.trim() === "meuser" && code === "meuser1") {
       localStorage.setItem("access", "user");
       localStorage.setItem("username", username);
       localStorage.setItem("authVersion", current_auth_version);
