@@ -9,9 +9,12 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const current_auth_version = "3";
+
     if (username.trim() === "dangarapolitech" && code === "dangarapolitexnikum") {
       localStorage.setItem("access", "user");
       localStorage.setItem("username", username);
+      localStorage.setItem("authVersion", current_auth_version);
       window.location.href = "/";
       return;
     }
@@ -19,6 +22,7 @@ const Login = () => {
     if (username.trim() === "adminpolitech" && code === "dangarapolitech") {
       localStorage.setItem("access", "admin");
       localStorage.setItem("username", username);
+      localStorage.setItem("authVersion", current_auth_version);
       window.location.href = "/adn/adminpanel/adnHome";
       return;
     }
@@ -29,8 +33,17 @@ const Login = () => {
   return (
     <div className="site-auth">
       <div className="site-auth-box">
-        <img className="site-auth-image" src="/uzbekistan-gerb-image.png" alt="Uzbekistan gerb image for login modal" srcSet="/uzbekistan-gerb-image.png 1x , /uzbekistan-gerb-image@2x.png 2x" width={40} height={40} />
-        <h2 className="site-auth-heading">Dang'ara shahrining 1-politexnikum kollejiga kirish tizimi</h2>
+        <img
+          className="site-auth-image"
+          src="/uzbekistan-gerb-image.png"
+          alt="Uzbekistan gerb image for login modal"
+          srcSet="/uzbekistan-gerb-image.png 1x , /uzbekistan-gerb-image@2x.png 2x"
+          width={40}
+          height={40}
+        />
+        <h2 className="site-auth-heading">
+          Dang'ara shahrining 1-politexnikum kollejiga kirish tizimi
+        </h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -52,7 +65,11 @@ const Login = () => {
             Kirish
           </button>
         </form>
-        {error && <p style={{ color: "red" , marginRight:'auto' , marginTop:'10px'}}>{error}</p>}
+        {error && (
+          <p style={{ color: "red", marginRight: "auto", marginTop: "10px" }}>
+            {error}
+          </p>
+        )}
       </div>
     </div>
   );

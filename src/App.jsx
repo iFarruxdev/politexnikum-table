@@ -8,7 +8,7 @@ import Subjects from "./pages/Subjects/Subjects";
 import Groups from "./pages/Groups/Groups";
 import Courses from "./pages/Courses/Courses";
 import CoursesTwo from "./pages/Courses-1/CoursesTwo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Admin from "./pages/Admin/Admin";
 import AdminPanelLayout from "./layout/adminPanelLayout/AdminPanelLayout";
 import AdnHome from "./pages/AdminHome/AdnHome";
@@ -16,11 +16,39 @@ import AdminSchedule from "./pages/AdminSchedules/AdminSchedule";
 import AdminTeacher from "./pages/AdminTeachers/AdminTeacher";
 import AdminGroups from "./pages/AdminGroups/AdminGroups";
 import AdminLibary from "./pages/AdminLibary/AdminLibary";
-import Login from "./pages/Login/Login"
+import Login from "./pages/Login/Login";
 
 function App() {
-  let [toggleBar, setToggleBar] = useState(false);
+  const [toggleBar, setToggleBar] = useState(false);
+  const [checkedAuth, setCheckedAuth] = useState(false);
   const access = localStorage.getItem("access");
+
+  // ✅ authVersion check
+  useEffect(() => {
+    const checkAuthVersion = async () => {
+      try {
+        const res = await fetch("/api/auth-version");
+        const data = await res.json();
+        const serverVer = data.authVersion;
+        const localVer = localStorage.getItem("authVersion");
+
+        if (localVer !== String(serverVer)) {
+          // Local auth eskirgan bo‘lsa, tozalaymiz
+          localStorage.clear();
+          localStorage.setItem("authVersion", serverVer);
+          window.location.reload();
+        } else {
+          setCheckedAuth(true);
+        }
+      } catch (err) {
+        console.error("Auth version tekshiruvida xatolik:", err);
+        setCheckedAuth(true);
+      }
+    };
+    checkAuthVersion();
+  }, []);
+
+  if (!checkedAuth) return null; // Loading bosqichi
 
   if (!access) {
     return <Login />;
@@ -43,27 +71,12 @@ function App() {
               path: "adminpanel",
               element: <Admin />,
               children: [
-                {
-                  path:'adnHome',
-                  element:<AdnHome />
-                },
-                {
-                  path:"adnSchedule",
-                  element: <AdminSchedule />
-                },
-                {
-                  path:'adnTeachers',
-                  element:<AdminTeacher />
-                },
-                {
-                  path:"adnGroups",
-                  element: <AdminGroups />
-                },
-                {
-                  path:"adnLibary",
-                  element: <AdminLibary />
-                },
-              ]
+                { path: "adnHome", element: <AdnHome /> },
+                { path: "adnSchedule", element: <AdminSchedule /> },
+                { path: "adnTeachers", element: <AdminTeacher /> },
+                { path: "adnGroups", element: <AdminGroups /> },
+                { path: "adnLibary", element: <AdminLibary /> },
+              ],
             },
           ],
         },
@@ -71,31 +84,17 @@ function App() {
           path: "schedule",
           element: <Courses />,
           children: [
-            {
-              path: "courses-1",
-              element: <Schedule />,
-            },
-            {
-              path: "courses-2",
-              element: <CoursesTwo />,
-            },
+            { path: "courses-1", element: <Schedule /> },
+            { path: "courses-2", element: <CoursesTwo /> },
           ],
         },
-        {
-          path: "teachers",
-          element: <Teachers />,
-        },
-        {
-          path: "groups",
-          element: <Groups />,
-        },
-        {
-          path: "subject",
-          element: <Subjects />,
-        },
+        { path: "teachers", element: <Teachers /> },
+        { path: "groups", element: <Groups /> },
+        { path: "subject", element: <Subjects /> },
       ],
     },
   ]);
+
   return <RouterProvider router={routes} />;
 }
 
