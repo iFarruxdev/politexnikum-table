@@ -44,7 +44,7 @@ const Login = () => {
           height={40}
         />
         <h2 className="site-auth-heading">
-          Dang'ara shahrining 1-politexnikum kollejiga kirish tizimi
+          Dang'ara tuman 1-son texnikumi
         </h2>
         <form onSubmit={handleSubmit}>
           <span className="inputs-icons-wrapper">
