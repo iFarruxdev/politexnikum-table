@@ -23,7 +23,6 @@ function App() {
   const [checkedAuth, setCheckedAuth] = useState(false);
   const access = localStorage.getItem("access");
 
-  // ✅ authVersion check (faqat bitta joyda)
   useEffect(() => {
     const checkAuthVersion = async () => {
       try {

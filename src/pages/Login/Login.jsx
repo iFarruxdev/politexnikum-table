@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Lock } from 'lucide-react';
+import { User } from 'lucide-react';
 import "./Login.css";
 
 const Login = () => {
@@ -45,6 +47,7 @@ const Login = () => {
           Dang'ara shahrining 1-politexnikum kollejiga kirish tizimi
         </h2>
         <form onSubmit={handleSubmit}>
+          <span className="inputs-icons-wrapper">
           <input
             type="text"
             className="site-auth-input"
@@ -53,6 +56,9 @@ const Login = () => {
             placeholder="Username kiriting"
             required
           />
+          <User className="icon-inputs" />
+          </span>
+          <span className="inputs-icons-wrapper">
           <input
             type="password"
             className="site-auth-input"
@@ -61,6 +67,8 @@ const Login = () => {
             placeholder="Parolni kiriting"
             required
           />
+          <Lock className="icon-inputs" />
+          </span>
           <button className="site-auth-btn" type="submit">
             Kirish
           </button>

@@ -9,6 +9,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import './Dashboard.css'
 
 const Dashboard = ({toggleBar , setToggleBar}) => {
+  let handleLogout = () => {
+    localStorage.clear();
+    window.location.reload();
+  }
   return (
     <div className={toggleBar ? "index-dashboard show-dashboard" : "index-dashboard"}>
         <Link className='dashboard-logo'>
@@ -48,6 +52,7 @@ const Dashboard = ({toggleBar , setToggleBar}) => {
             </NavLink>
           </li>
         </ul>
+        <button className='dashboard-logout-btn' onClick={handleLogout}>Logout</button>
     </div>
   )
 }
